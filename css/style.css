@@ -1,0 +1,124 @@
+html, body{
+	width:100%;
+	height: 100%;
+}
+.main{
+	width:100%;
+	height: 100%;
+}
+.bg{
+	position: relative;
+	height: 100%;
+}
+.back{
+	height: 100%;
+	width: 100%;
+}
+.title-h{
+	font-size: 2em;
+	position: absolute;
+	top:5%;
+	left:2%;
+	color: brown;
+	font-family: 'Super Mario Bros.';
+	animation: sign 6s;
+}
+.start{
+	font-family: 'Super Mario Bros.';
+	position: absolute;
+	background-color: skyblue;
+	color:white;
+	left:2%; 
+	bottom:36%;
+	padding:0.5%;
+	border-radius: 10%;
+	animation: refresh 6s;
+	transition: all 0.1s ease 0.1s;
+
+}
+.start:hover{
+	background-color: white;
+	color:red;
+	border: 1px solid red;
+}
+.pipe{
+	position: absolute;
+	bottom: 9%;
+	left: 50%;
+	height: 25%;
+}
+.img1{
+	height:25%;
+	position: absolute;
+	bottom: 9%;
+	left: 0;
+	animation: first 6s;
+	opacity: 1;
+}
+.img2{
+	height:25%;
+	position: absolute;
+	bottom: 9%;
+	left: 10%;
+	animation: second 3s 0.5s;
+	opacity: 0;
+}
+.img3{
+	height:25%;
+	position: absolute;
+	bottom: 9%;
+	left: 25%;
+	opacity: 0;
+	animation: third 3s 2s; 
+}
+.img4{
+	height:25%;
+	position: absolute;
+	bottom: 8%;
+	right: 5%;
+	opacity: 0;
+	animation: fourth 4s 4.2s;
+}
+@keyframes first{
+	0%{bottom: 9%; left: 0;}
+	15%{bottom:9%; left: 5%;}
+	16%{opacity:0; bottom: 9%; left: 5%;}
+	17%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes second{
+	0%{opacity:1; bottom: 9%; left: 5%;}
+	49%{opacity:1;bottom: 9%; left: 25%;}
+	50%{opacity:0;bottom: 9%; left: 25%;}
+	100%{opacity: 0;}
+}
+@keyframes third{
+	0%{opacity:1; bottom: 9%; left: 25%;}
+	25%{opacity:1; bottom: 9%; left: 30%;}
+	52%{opacity:1;bottom: 30%; left: 40%;}
+	53%{opacity:1;bottom: 40%; left: 50%;}
+	56%{opacity:1;bottom: 30%; left: 60%;}
+	60%{opacity:1; bottom: 9%; left: 70%;}
+	74%{opacity:1; bottom: 9%; left: 85%;}
+	75%{opacity:0; bottom: 9%; left: 85%;}
+	100%{opacity:0;}
+}
+@keyframes fourth{
+	0%{opacity:1; bottom: 8%; right: 5%;}
+	19%{opacity:1; bottom: 8%; right: 0%;}
+	20%{opacity:0; bottom: 8%; right: 0%;}
+	100%{opacity:0;}
+}
+@keyframes refresh{
+	0%{opacity:0}
+	99%{opacity:0}
+	100%{opacity:1}
+
+}
+@keyframes sign{
+	0%{color:brown;}
+	25%{color:red;}
+	50%{color:yellow;}
+	75%{color:red;}
+	100%{color:brown;}
+}

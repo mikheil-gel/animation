@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Super Mario Bros.';
+    src: url('../fonts/SuperMarioBros.eot');
+    src: url('../fonts/SuperMarioBros.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SuperMarioBros.woff2') format('woff2'),
+        url('../fonts/SuperMarioBros.woff') format('woff'),
+        url('../fonts/SuperMarioBros.ttf') format('truetype'),
+        url('../fonts/SuperMarioBros.svg#SuperMarioBros.') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
